@@ -1,0 +1,10 @@
+class SmokeSensor(Sensor):
+    def read_value(self):
+        # 假设获取烟雾浓度值的代码
+        return 0.02
+
+    def get_status(self):
+        return "Smoke Sensor OK"
+
+smoke_sensor = SmokeSensor(sensor_id="S1", location="Garage")
+
