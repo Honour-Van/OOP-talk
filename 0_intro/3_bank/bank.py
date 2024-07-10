@@ -14,6 +14,7 @@ class BankAccount:
             self.balance -= amount
             print(f"{self.owner} withdrew {amount}. New balance: {self.balance}")
 
+
 account1 = BankAccount("Alice", 100.0)
 account2 = BankAccount("Bob", 50.0)
 

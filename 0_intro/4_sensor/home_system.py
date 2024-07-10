@@ -2,6 +2,7 @@ from temp_sensor import TemperatureSensor
 from humidity_sensor import HumiditySensor
 from light_sensor import LightSensor
 
+
 class HomeSensorSystem:
     def __init__(self):
         self.sensors = []
@@ -20,6 +21,7 @@ class HomeSensorSystem:
         for sensor in self.sensors:
             statuses[sensor.sensor_id] = sensor.get_status()
         return statuses
+
 
 temp_sensor = TemperatureSensor(sensor_id="T1", location="Living Room")
 humidity_sensor = HumiditySensor(sensor_id="H1", location="Kitchen")
