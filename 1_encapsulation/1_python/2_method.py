@@ -9,6 +9,7 @@ class Sensor:
     def get_status(self):
         return "Sensor status OK"
 
+
 # 创建对象并调用方法
 temp_sensor = Sensor(sensor_id="T1", location="Living Room")
 print(temp_sensor.read_value())

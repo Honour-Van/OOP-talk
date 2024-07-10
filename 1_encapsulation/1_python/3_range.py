@@ -13,6 +13,7 @@ class Sensor:
     def get_sensor_id(self):
         return self.__sensor_id
 
+
 # 创建对象并访问成员
 temp_sensor = Sensor(sensor_id="T1", location="Living Room")
 print(temp_sensor.read_value())

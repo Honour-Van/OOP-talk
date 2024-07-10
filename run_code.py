@@ -36,7 +36,7 @@ def run_go(file_path):
 
 def run_code(file_path):
     _, extension = os.path.splitext(file_path)
-    if extension == ".cpp":
+    if extension == ".cpp" or extension == ".cc":
         return run_cpp(file_path)
     elif extension == ".py":
         return run_python(file_path)
