@@ -17,6 +17,7 @@ class Sensor:
     def set_sensor_id(self, sensor_id):
         self.__sensor_id = sensor_id
 
+
 # 创建对象并使用访问器和修改器方法
 temp_sensor = Sensor(sensor_id="T1", location="Living Room")
 print(temp_sensor.get_sensor_id())

@@ -15,9 +15,13 @@ class Sensor:
         self.value = value
         self.notify_observers()
 
+
 class SensorObserver:
     def update(self, sensor):
-        print(f"Sensor {sensor.id} at {sensor.location} updated with value {sensor.value}")
+        print(
+            f"Sensor {sensor.id} at {sensor.location} updated with value {sensor.value}"
+        )
+
 
 # 使用示例
 sensor = Sensor("T1", "Living Room")
